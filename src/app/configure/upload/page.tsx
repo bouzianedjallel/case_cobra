@@ -10,8 +10,9 @@ const page = () => {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isDragOver , setIsDragOver] = useState<boolean>(false)
-
-  const isUploading = false;
+  const [uploadProgress, setUploadProgres] = useState<number>(45)
+  
+  const isUploading = true;
   const [isPending , startTransition ] = useTransition() 
 
   const onDropRejected = () => {}
